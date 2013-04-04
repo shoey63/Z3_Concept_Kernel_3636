@@ -190,6 +190,8 @@ endif
 obj-$(CONFIG_MSM_RPM_REGULATOR_SMD) += rpm-regulator-smd.o
 obj-$(CONFIG_MSM_SPM_REGULATOR) += spm-regulator.o
 
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
+
 ifdef CONFIG_MSM_SUBSYSTEM_RESTART
 	obj-y += subsystem_notif.o
 	obj-y += subsystem_restart.o
